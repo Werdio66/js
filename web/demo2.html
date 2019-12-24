@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var open1;
+        function fun() {
+            open1.close();
+        }
+        function fun1() {
+            open1 = open();
+            confirm();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="关闭窗口" id="btn_close" onclick="fun()">
+    <input type="button" value="打开新的窗口" id="btn_open" onclick="fun1()">
+</body>
+</html>

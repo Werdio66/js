@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <img id="img" alt src="img/01.jpg" onclick="fun()">
+    <script>
+
+        var number = 1;
+        function fun(){
+            number++;
+            var img = document.getElementById("img");
+            img.src = "img/0" + number + ".jpg";
+            if (number === 3)
+                number = 0;
+        }
+        // window.setTimeout(fun,3000);
+        setInterval(fun,3000);
+    </script>
+</body>
+</html>
